@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de E-mail</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📧 Validação de E-mail</h1>
+        <p class="subtitle">Preencha o formulário abaixo</p>
+
+        <form id="emailForm">
+            <div class="form-group">
+                <label for="email">Endereço de E-mail:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="exemplo@email.com"
+                    autocomplete="email"
+                >
+                <div id="message" class="message"></div>
+            </div>
+
+            <button type="submit">Validar E-mail</button>
+        </form>
+
+        <div class="info-box">
+            <h3>📋 Formato válido de e-mail:</h3>
+            <ul>
+                <li>Deve conter um @ (arroba)</li>
+                <li>Deve ter caracteres antes do @</li>
+                <li>Deve ter um domínio após o @</li>
+                <li>Deve terminar com uma extensão (.com, .br, etc.)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
